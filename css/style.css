@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+#home {
+  height: 800px;
+  background: #000712;
+}
+
+#home h1 {
+  position: absolute;
+  font-weight: 900;
+  color: #fff;
+  font-size: 4.5em;
+  margin-top: 380px;
+  margin-left: 80px;
+}
+#hiddenMenu {
+  display: none;
+  height: 800px;
+  background: #000712;
+}
+
+/*---------------MENU----------------*/
+header{
+}
+.menu {
+  padding-top: 20px;
+  position: fixed;
+  left: 50%;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+.dot1 , .dot2 , .dot3 {
+  position: absolute;
+  display: block;
+  left: -50%;
+  font-size: 1.5em;
+}
+.dot1 {
+  margin-top: -15px;
+}
+.dot3 {
+  margin-top: 15px;
+}
+.eye {
+  position: absolute;
+  display: block;
+  margin-left: -28px;
+  margin-top: -18px;
+}
+.menu img{
+  position: absolute;
+  width: 70px;
+  opacity: 0;
+}
+.menu:hover img {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+/*---------------INTRO----------------*/
+#intro {
+  height: 800px;
+}
