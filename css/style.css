@@ -115,24 +115,59 @@ header {}
 }
 
 /*---------------HOME----------------*/
-#home {
-  height: 800px;
-  background: salmon;
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+div{
+  box-sizing:border-box;
 }
 
-#home h1 {
-  position: absolute;
-  font-weight: 900;
-  color: #fff;
-  font-size: 4.5em;
-  margin-top: 50vh;
-  ;
-  margin-left: 80px;
+body {
+  background: #111;
 }
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:100vh;
+  max-height:100vw;
+  margin:0;
+  background:salmon;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-800px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+  display:block;
+  padding:5px;
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.rectangles{
+  padding:100px 0 0 0;
+}
+.rectangles > div{
+  width:50%;
+  height:auto;
+  margin:50vw 30vh;
+  padding:5px;
+  background: #fff;
+  transform:rotate(90deg) translateY(80px);
+  transform-origin: right top;
+}
+.rectangles > div:first-child{
+  margin-top: 120vw;
+}
+
+
 
 #logo {
   position: absolute;
-  top: 20%;
+  top: 25%;
   margin-left: calc(50vw - 10%);
 }
 #logo img{
@@ -148,14 +183,4 @@ header {}
   width: 8%;
   margin-left: 6.1%;
   margin-top: 10.5%;
-}
-
-/*---------------INTRO----------------*/
-#intro {
-  height: 800px;
-  background: salmon;
-}
-#intro p{
-  color: #fff;
-  padding: 2%;
 }
