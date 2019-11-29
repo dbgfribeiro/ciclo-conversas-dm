@@ -3,9 +3,121 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+}
+
+/*---------------MENU----------------*/
+header {}
+
+.menu {
+  z-index: 1;
+  padding-top: 20px;
+  position: fixed;
+  left: 50%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dot1, .dot2, .dot3 {
+  position: absolute;
+  display: block;
+  left: -50%;
+  font-size: 1.5em;
+}
+
+.dot1 {
+  margin-top: -15px;
+}
+
+.dot3 {
+  margin-top: 15px;
+}
+
+.eye {
+  position: absolute;
+  display: block;
+  margin-left: -28px;
+  margin-top: -18px;
+}
+
+.menu img {
+  position: absolute;
+  width: 70px;
+  opacity: 0;
+}
+
+.menu:hover img {
+  opacity: 1;
+  transition: 200ms ease-in;
+}
+
+#hiddenMenu {
+  height: 100vh;
+  width: 100vw;
+  background: #000712;
+  z-index: 1;
+  position: fixed;
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70vh;
+}
+
+.menu-list a {
+  text-decoration: none;
+}
+
+.menu-list li {
+  font-size: 2em;
+  color: #fff;
+  list-style: none;
+}
+
+.menu-list li:hover {
+  color: #08f2a4;
+  transition: 0.5s;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.close:hover {
+  opacity: 0.1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #08f2a4;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+/*---------------HOME----------------*/
 #home {
   height: 800px;
-  background: #000712;
+  background: salmon;
 }
 
 #home h1 {
@@ -13,56 +125,37 @@
   font-weight: 900;
   color: #fff;
   font-size: 4.5em;
-  margin-top: 380px;
+  margin-top: 50vh;
+  ;
   margin-left: 80px;
 }
-#hiddenMenu {
-  display: none;
-  height: 800px;
-  background: #000712;
-}
 
-/*---------------MENU----------------*/
-header{
+#logo {
+  position: absolute;
+  top: 20%;
+  margin-left: calc(50vw - 10%);
 }
-.menu {
-  padding-top: 20px;
+#logo img{
   position: fixed;
-  left: 50%;
-}
-.menu a {
-  text-decoration: none;
-  color: #fff;
-}
-.dot1 , .dot2 , .dot3 {
-  position: absolute;
   display: block;
-  left: -50%;
-  font-size: 1.5em;
+  width: 20%;
+  margin: auto;
 }
-.dot1 {
-  margin-top: -15px;
+#logo img.retina{
+
 }
-.dot3 {
-  margin-top: 15px;
-}
-.eye {
-  position: absolute;
-  display: block;
-  margin-left: -28px;
-  margin-top: -18px;
-}
-.menu img{
-  position: absolute;
-  width: 70px;
-  opacity: 0;
-}
-.menu:hover img {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
+#logo img.barra{
+  width: 8%;
+  margin-left: 6.1%;
+  margin-top: 10.5%;
 }
 
 /*---------------INTRO----------------*/
 #intro {
   height: 800px;
+  background: salmon;
+}
+#intro p{
+  color: #fff;
+  padding: 2%;
 }

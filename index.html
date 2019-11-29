@@ -8,15 +8,21 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <script src="js/menu.min.js"></script>
+
+  </script>
   <title>CCDM</title>
 </head>
 
 <body>
+  <script src="js/color-change.min.js"></script>
 
   <header>
-    <div class="menu" onclick="openMenu()">
+
+    <nav>
+
+      <div class="menu" onclick="openMenu()">
         <div class="eye">
-          <a href="#"><img src="img/eye.png"></a>
+          <a href="#"><img class="eye-img" src="img/eye.png"></a>
         </div>
         <div class="dot1">
           <a href="#"><span>&bull;</span></a>
@@ -24,24 +30,51 @@
         <div class="dot2">
           <a href="#"><span>&bull;</span></a>
         </div>
-         <div class="dot3">
+        <div class="dot3">
           <a href="#"><span>&bull;</span></a>
         </div>
-    </div>
+      </div>
+
+      <section id="hiddenMenu">
+        <a class="close" onclick="closeMenu()">
+          <div class="menu-list">
+            <a href="#">
+              <li>sobre</li>
+            </a>
+            <a href="#">
+              <li>edição 2018</li>
+            </a>
+            <a href="#">
+              <li>intervenientes</li>
+            </a>
+            <a href="#">
+              <li>locais</li>
+            </a>
+            <a href="#">
+              <li>contactos</li>
+            </a>
+          </div>
+      </section>
+
+    </nav>
+
   </header>
 
-
   <section id="home">
-    <h1>ciclo<br>de conversas<br><span style="color:#08f2a4">design</span><br>& <span style="color:#08f2a4">multimédia</span></h1>
   </section>
 
-  <section id="hiddenMenu">
-    <a href="#"><li></li></a>
+  <section id="logo">
+    <img class="barra" src="img/logo/barra.svg" alt="logo">
+    <img class="globo" src="img/logo/globo.svg" alt="logo">
+    <img class="retina" src="img/logo/retina.svg" alt="logo">
+    <img class="iris" src="img/logo/iris.svg" alt="logo">
   </section>
+  <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
+  <script src="js/logo.min.js"></script>
+
 
 
   <section id="intro">
-
   </section>
 
 </body>
