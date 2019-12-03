@@ -1,24 +1,21 @@
 * {
   margin: 0px;
-  font-family: 'Lato', sans-serif;
-}
-
-body {
+  font-family: 'Space Mono', monospace;
 }
 
 /*---------------MENU----------------*/
-header {}
 
 .menu {
   z-index: 1;
-  padding-top: 20px;
+  padding-top: 10px;
   position: fixed;
-  left: 50%;
+  top: 2%;
+  left: 2%;
 }
 
 .menu a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .dot1, .dot2, .dot3 {
@@ -29,23 +26,23 @@ header {}
 }
 
 .dot1 {
-  margin-top: -15px;
+  margin-top: -10px;
 }
 
 .dot3 {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .eye {
   position: absolute;
   display: block;
-  margin-left: -28px;
-  margin-top: -18px;
+  margin-left: -16px;
+  margin-top: 8px;
 }
 
 .menu img {
   position: absolute;
-  width: 70px;
+  width: 45px;
   opacity: 0;
 }
 
@@ -55,9 +52,9 @@ header {}
 }
 
 #hiddenMenu {
+  background: #000;
   height: 100vh;
   width: 100vw;
-  background: #000712;
   z-index: 1;
   position: fixed;
   display: none;
@@ -69,19 +66,47 @@ header {}
   padding-top: 70vh;
 }
 
-.menu-list a {
-  text-decoration: none;
-}
-
-.menu-list li {
-  font-size: 2em;
-  color: #fff;
+.menu-list {
   list-style: none;
 }
 
-.menu-list li:hover {
-  color: #08f2a4;
-  transition: 0.5s;
+.menu-list li a {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg {
+  background-color: #000;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.menu-list li:nth-child(2):hover~.bg {
+  background: #ff6d6d;
+}
+
+.menu-list li:nth-child(3):hover~.bg {
+  background: #6dffb9;
+}
+
+.menu-list li:nth-child(4):hover~.bg {
+  background-image: url(../img/dARQ_black.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu-list li:nth-child(5):hover~.bg {
+  background: #ec6dff;
+}
+.menu-list li:nth-child(6):hover~.bg {
+  background: #303030;
 }
 
 .close {
@@ -93,17 +118,13 @@ header {}
   height: 32px;
 }
 
-.close:hover {
-  opacity: 0.1;
-}
-
 .close:before, .close:after {
   position: absolute;
   left: 15px;
   content: ' ';
   height: 33px;
   width: 2px;
-  background-color: #08f2a4;
+  background-color: #fff;
 }
 
 .close:before {
@@ -115,72 +136,88 @@ header {}
 }
 
 /*---------------HOME----------------*/
-::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;}
-
-div{
-  box-sizing:border-box;
-}
-
-body {
-  background: #111;
-}
-
-.horizontal-scroll-wrapper{
-  position:absolute;
-  display:block;
-  top:0;
-  left:0;
-  width:100vh;
-  max-height:100vw;
-  margin:0;
-  background:salmon;
-  overflow-y:auto;
-  overflow-x:hidden;
-  transform:rotate(-90deg) translateY(-800px);
-  transform-origin:right top;
-}
-.horizontal-scroll-wrapper > div{
-  display:block;
-  padding:5px;
-  transform:rotate(90deg);
-  transform-origin: right top;
-}
-
-.rectangles{
-  padding:100px 0 0 0;
-}
-.rectangles > div{
-  width:50%;
-  height:auto;
-  margin:50vw 30vh;
-  padding:5px;
-  background: #fff;
-  transform:rotate(90deg) translateY(80px);
-  transform-origin: right top;
-}
-.rectangles > div:first-child{
-  margin-top: 120vw;
-}
-
-
-
 #logo {
+  display: none;
   position: absolute;
   top: 25%;
   margin-left: calc(50vw - 10%);
+  z-index: 2;
+  transform: translateX(10vh);
 }
-#logo img{
+
+#logo img {
   position: fixed;
   display: block;
-  width: 20%;
+  width: 18%;
   margin: auto;
+  transform: rotate(90deg);
 }
-#logo img.retina{
 
-}
-#logo img.barra{
+#logo img.retina {}
+
+#logo img.barra {
   width: 8%;
-  margin-left: 6.1%;
+  margin-left: 5.2%;
   margin-top: 10.5%;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.one {
+  background-color: #fff;
+  width: 100vw;
+}
+
+.two {
+  background-color: #fff;
+  width: 50vw;
+}
+
+.two p {
+  margin: 27vh 0 0 5%;
+  font-size: 3em;
+}
+
+.three {
+  background-color: #000;
+  width: 50vw;
+}
+
+.welcome {
+  color: #fff;
+  padding: 10% 20% 10% 7%;
+}
+
+.welcome h1 {
+  font-size: 3em;
+}
+
+.welcome p {
+  margin-top: 2%;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
