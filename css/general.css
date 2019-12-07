@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  font-family: 'Space Mono', monospace;
+}
+
+/*---------------MENU----------------*/
+
+.menu {
+  z-index: 1;
+  padding-top: 10px;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dot1, .dot2, .dot3 {
+  position: absolute;
+  display: block;
+  left: -50%;
+  font-size: 1.5em;
+}
+
+.dot1 {
+  margin-top: -10px;
+}
+
+.dot3 {
+  margin-top: 10px;
+}
+
+.eye {
+  position: absolute;
+  display: block;
+  margin-left: -16px;
+  margin-top: 8px;
+}
+
+.menu img {
+  position: absolute;
+  width: 45px;
+  opacity: 0;
+}
+
+.menu:hover img {
+  opacity: 1;
+  transition: 200ms ease-in;
+}
+
+#hiddenMenu {
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+  display: none;
+}
+.close {
+  position: absolute;
+  cursor: pointer;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70vh;
+  list-style: none;
+}
+
+.menu-list li a {
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg {
+  background-color: #000;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.menu-list li:first-child:hover~.bg {
+  background-image: url(../img/uc.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.menu-list li:nth-child(2):hover~.bg {
+  background-image: url(../img/ciencia.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.menu-list li:nth-child(3):hover~.bg {
+  background-image: url(../img/dARQ_black.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.menu-list li:nth-child(4):hover~.bg {
+  background-image: url(../img/dei.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.menu-list li:nth-child(5):hover~.bg {
+  background-image: url(../img/museu.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}

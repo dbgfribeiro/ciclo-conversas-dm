@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.scss">
+  <link rel="stylesheet" href="css/general.css">
   <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
   <script src="js/menu.min.js"></script>
 
-  </script>
   <title>CCDM</title>
 </head>
 
@@ -36,13 +35,13 @@
       </div>
 
       <section id="hiddenMenu">
-        <a class="close" onclick="closeMenu()">
+        <div class="close" onclick="closeMenu()"></div>
           <div class="menu-list">
-              <li><a href="#">SOBRE</a></li>
-              <li><a href="#">EDIÇÃO 2018</a></li>
-              <li><a href="#">LOCAIS</a></li>
-              <li><a href="#">INTERVENIENTES</a></li>
-              <li><a href="#">CONTACTOS</a></li>
+              <li><a href="#welcome">SOBRE</a></li>
+              <li><a href="anterior.html">EDIÇÃO 2018</a></li>
+              <li><a href="locais.html">LOCAIS</a></li>
+              <li><a href="intervenientes.html">INTERVENIENTES</a></li>
+              <li><a href="contactos.html">CONTACTOS</a></li>
               <li class="bg"></li>
           </div>
       </section>
@@ -63,6 +62,7 @@
     <script src="js/logo.min.js"></script>
 
 
+
     <div class="outer-wrapper">
       <div class="wrapper">
 
@@ -75,10 +75,133 @@
         </div>
 
         <div class="slide three">
-          <div class="welcome">
+          <div class="welcome" id="welcome">
             <h1>BEM VINDO</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>O "Ciclo de Conversas Design+Multimédia" é um ciclo de palestras que se irá realizar durante o mês de Abril tendo como convidados profissionais ligados ao Design e a outras áreas criativas adjacentes. O ciclo encontra-se repartido em quatro sessões, sendo cada uma delas destinada a dois convidados distintos que poderão ser individuais ou colectivos. A intenção é que diferentes profissionais mostrem diferentes áreas de trabalho.</p>
+          </div>
+        </div>
+
+        <div class="slide four">
+          <div class="last" id="last">
+            <div class="info">
+              <div class="text">
+                <h1>EDIÇÃO 2018</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="images">
+                <div class="img-container"></div>
+                <div class="img-container"></div>
+                <div class="img-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide five">
+          <div class="locals" id="locals">
+            <h1>LOCAIS</h1>
+            <div class="info">
+              <div class="local">
+                <div class="img-container"></div>
+                <p>Museu da Ciência</p>
+              </div>
+              <div class="local">
+                <div class="img-container"></div>
+                <p>DARQ</p>
+              </div>
+              <div class="local">
+                <div class="img-container"></div>
+                <p>DEI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slide six">
+          <div class="members" id="members">
+            <h1>INTERVENIENTES</h1>
+
+            <div class="container-members">
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/arebelo.png" alt="artur-rebelo-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 1</h2>
+                <p>Artur Rebelo</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/ncoelho.png" alt="nuno-coelho-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 2</h2>
+                <p>Nuno Coelho</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/jbicker.png" alt="joao-bicker-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 3</h2>
+                <p>João Bicker</p>
+              </div>
+
+            </div>
+
+            <div class="container-members">
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/phardman.png" alt="paul-hardman-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 4</h2>
+                <p>Paul Hardman</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/rsacadura.png" alt="ricardo-sacadura-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 5</h2>
+                <p>Ricardo Sacadura</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/dribeiro.png" alt="diogo-ribeiro-photo">
+                  <div class="member-info">
+                    <p>ajkdlaskdlas</p>
+                  </div>
+                </div>
+                <h2>Talk 6</h2>
+                <p>Diogo Ribeiro</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slide seven">
+          <div class="contacts" id="contacts">
+            <h1>CONTACTOS</h1>
           </div>
         </div>
 
