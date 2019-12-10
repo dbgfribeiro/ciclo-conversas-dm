@@ -3,6 +3,10 @@
   font-family: 'Space Mono', monospace;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*---------------MENU----------------*/
 
 .menu {
@@ -88,7 +92,7 @@
 .menu-list {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 70vh;
+  padding-top: 40vh;
   list-style: none;
 }
 
