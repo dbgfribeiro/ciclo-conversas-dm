@@ -3,7 +3,6 @@
 .slide {
   width: 100vw;
   height: 100vh;
-  outline: 2px solid black;
 }
 
 #wrapper {
@@ -25,24 +24,6 @@
   -ms-overflow-style: none;
 }
 
-#logo {
-  position: absolute;
-  top: 30%;
-  margin-left: calc(50vw - 2.5%);
-  z-index: -1;
-}
-#logo img{
-  position: fixed;
-  display: block;
-  width: 5%;
-  margin: auto;
-}
-
-#logo #barra {
-  width: 2.2%;
-  margin: 2.5% 0 0 1.4%;
-}
-
 /*----INTRO----*/
 .one {
   width: 100vw;
@@ -54,7 +35,6 @@
   width: 50vw;
 }
 .two video{
-  z-index: -60;
   margin-top: 20vh;
   width: 60%;
 }
@@ -75,6 +55,30 @@
   font-size: 1.2em;
   margin-top: 5%;
 }
+@media only screen and (max-width:800px) {
+  .two{
+    width:40vw;
+  }
+  .two video{
+    margin-top: 70vh;
+    width: 100%;
+  }
+  .three{
+    width: 60vw;
+  }
+  .welcome p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width:400px) {
+  .welcome h1 {
+    font-size: 2em;
+  }
+  .welcome p {
+    font-size: 0.6em;
+  }
+}
+
 
 /*----2018----*/
 .four{
@@ -98,7 +102,7 @@
 }
 .last .img-slider {
   height: 100vh;
-  width: auto;
+  width: 100vw;
 }
 .last .img-slider .images{
   margin: 5vh 0;
@@ -111,17 +115,64 @@
   margin-top: 5%;
   width: 100%;
 }
+.images img:first-child{
+  margin-top: 2%;
+}
 .controls img{
   cursor: pointer;
-  margin-top: -5%;
+  margin-top: -8%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 6%;
+  width: 5%;
 }
-
 .controls img:nth-child(2){
   display: none;
+}
+@media only screen and (min-width:400px) and (max-width:800px) {
+  .last .info{
+    display: block;
+  }
+  .last .img-slider {
+    width: auto;
+    display: flex;
+  }
+  .second{
+    display: block;
+    padding-left: 5%;
+  }
+  .images img{
+    margin-top: 5%;
+  }
+  .controls{
+    display: none;
+  }
+}
+@media only screen and (max-width:400px) {
+  .last .info{
+    display: block;
+  }
+  .last .text h1{
+    font-size: 2em;
+  }
+  .last .text p{
+    font-size: 0.6em;
+    margin-top: 5%;
+  }
+  .last .img-slider {
+    width: auto;
+  }
+  .last .img-slider .images{
+    margin: 4vh 0;
+  }
+  .images {
+  }
+  .images img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
 }
 
 /*----LOCALS----*/
@@ -147,6 +198,20 @@
   height: 225px;
   margin-right: 10px;
 }
+@media only screen and (max-width:800px) {
+  .locals{
+    padding: 0;
+  }
+  .locals .info{
+    display: block;
+  }
+}
+@media only screen and (max-width:400px) {
+  .locals h1 {
+    font-size: 2em;
+  }
+}
+
 
 /*----MEMBERS----*/
 .six{
@@ -171,6 +236,7 @@
 }
 .member-img img{
   width: 70%;
+  z-index: -1;
 }
 .member-info{
   transition: .5s ease;
@@ -182,10 +248,13 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.member-img img:hover + .member-info{
+.member-info p{
+  z-index: 2;
+}
+.member-img:hover .member-info{
     opacity: 1;
 }
-.member-img img:hover{
+.member-img:hover img{
   opacity: 0.3;
 }
 
