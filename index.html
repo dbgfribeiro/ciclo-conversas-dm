@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/general.css">
   <script type="text/javascript" src="lib/jquery-3.4.1.min.js"></script>
@@ -13,15 +13,18 @@
   <script src="js/menu.min.js"></script>
   <script src="js/slider.min.js"></script>
 
-  <title>CCDM</title>
+  <title>CCDM'20</title>
 </head>
 
 <body>
 
   <header>
+    <div class="logo-ccdm">
+      <a href="#" class="go-home"><img src="img/logo.png" alt="back-arrow"></a>
+    </div>
+
 
     <nav>
-
       <div class="menu" onclick="openMenu()">
         <div class="eye">
           <a href="#"><img class="eye-img" src="img/eye.png"></a>
@@ -40,8 +43,8 @@
       <section id="hiddenMenu" onclick="closeMenu()">
         <div class="close" onclick="closeMenu()"></div>
         <div class="menu-list" onclick="closeMenu()">
-          <li><a href="#intro">SOBRE</a></li>
-          <li><a href="#last">EDIÇÃO 2018</a></li>
+          <li><a href="#two">SOBRE</a></li>
+          <li><a href="#last">EDIÇÃO 2019</a></li>
           <li><a href="#locals">LOCAIS</a></li>
           <li><a href="#members">INTERVENIENTES</a></li>
           <li><a href="#contacts">CONTACTOS</a></li>
@@ -51,6 +54,7 @@
 
     </nav>
 
+
   </header>
   <div id="logo">
     <img id="barra" src="img/logo/barra.svg" alt="logo">
@@ -59,21 +63,29 @@
     <img id="iris" src="img/logo/iris.svg" alt="logo">
   </div>
 
+  <div id="date">
+      <h1>19</h1>
+      <span class="date-line" id="date-line"></span>
+      <h2 id="final-line">22 abril</h2>
+  </div>
+
   <section id="home">
 
     <div id="outer-wrapper" onscroll="scrolling()">
       <div id="wrapper">
 
-        <div class="one"></div>
-
-
-        <div class="slide two" id="intro" data-aos="fade-left">
+        <div class="one" id="intro">
           <video autoplay loop muted>
             <source src="img/animação_inicial.mp4" type="video/mp4"/>
           </video>
         </div>
 
-        <div class="slide three">
+
+        <div class="slide two" id="two">
+
+        </div>
+
+        <div class="slide three" id=three>
           <div class="welcome" id="welcome">
             <h1>BEM VINDO</h1>
             <p>O "Ciclo de Conversas Design+Multimédia" é um ciclo de palestras que se irá realizar durante o mês de Abril tendo como convidados profissionais ligados ao Design e a outras áreas criativas adjacentes. O ciclo encontra-se repartido em
@@ -81,151 +93,181 @@
           </div>
         </div>
 
-        <div class="slide four">
+        <div class="slide four" id="four">
           <div class="last" id="last">
             <div class="info">
               <div class="text">
-                <h1>EDIÇÃO 2018</h1>
+                <h1>EDIÇÃO 2019</h1>
                 <p>O CCDM decorreu em 5 espaços diferentes da cidade de Coimbra, os participantes recolheram de testemunhos de projetos de investigação em várias áreas, cada um deles oferecendo sempre uma perspetiva de fusão entre criatividade e
                   tecnologia, forma e função, presente e futuro.</p>
               </div>
               <div class="img-slider">
                 <div class="images first">
-                  <img src="img/2018/one.jpg" alt="">
-                  <img src="img/2018/two.jpg" alt="">
-                  <img src="img/2018/three.jpg" alt="">
+                  <img src="img/2019/1.jpg" alt="">
+                  <img src="img/2019/2.jpg" alt="">
+                  <img src="img/2019/3.jpg" alt="">
                 </div>
                 <div class="images second">
-                  <img src="img/2018/four.jpg" alt="">
-                  <img src="img/2018/five.jpg" alt="">
-                  <img src="img/2018/six.jpg" alt="">
+                  <img src="img/2019/4.jpg" alt="">
+                  <img src="img/2019/5.jpg" alt="">
+                  <img src="img/2019/6.jpg" alt="">
                 </div>
                 <div class="controls">
-                  <img onclick="next()" src="img/2018/up.svg" alt="up-arrow">
-                  <img onclick="back()" src="img/2018/down.svg" alt="down-arrow">
+                  <img onclick="next()" src="img/2019/up.svg" alt="up-arrow">
+                  <img onclick="back()" src="img/2019/down.svg" alt="down-arrow">
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="slide five">
+        <div class="slide five" id="five">
           <div class="locals" id="locals">
             <h1>LOCAIS</h1>
-            <div class="info">
+            <div class="all-locals">
+
+            <div class="locals-container">
               <div class="local">
-                <div class="img-container"></div>
-                <p>Museu da Ciência</p>
+                <img src="img/locais/museu-ciencia.jpg" alt="">
+                <div class="local-info">
+                  <p>Museu da Ciência</p>
+                </div>
               </div>
               <div class="local">
-                <div class="img-container"></div>
-                <p>DARQ</p>
+                <img src="img/locais/dARQ.jpg" alt="">
+                <div class="local-info">
+                  <p>dARQ</p>
+                </div>
               </div>
               <div class="local">
-                <div class="img-container"></div>
-                <p>DEI</p>
+                <img src="img/locais/DEI.jpg" alt="">
+                <div class="local-info">
+                  <p>DEI</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="locals-container">
+              <div class="local">
+                <img src="img/locais/fluc.jpg" alt="">
+                <div class="local-info">
+                  <p>FLUC</p>
+                </div>
+              </div>
+              <div class="local">
+                <img src="img/locais/colegio_artes.jpg" alt="">
+                <div class="local-info">
+                  <p>Colégio das Artes</p>
+                </div>
+              </div>
+              <div class="local">
+                <img src="img/locais/laboratorio_chimico.jpg" alt="">
+                <div class="local-info">
+                  <p style="top: 35%">Laboratório do<br>Chimico</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
 
-        <div class="slide six">
+        <div class="slide six" id="six">
+          <h1>INTERVENIENTES</h1>
           <div class="members" id="members">
-            <h1>INTERVENIENTES</h1>
 
             <div class="container-members">
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/arebelo.png" alt="artur-rebelo-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 1</h2>
-                <p>Artur Rebelo</p>
-              </div>
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/ncoelho.png" alt="nuno-coelho-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 2</h2>
-                <p>Nuno Coelho</p>
-              </div>
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/jbicker.png" alt="joao-bicker-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 3</h2>
-                <p>João Bicker</p>
-              </div>
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/srebelo.png" alt="sergio-rebelo-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 4</h2>
-                <p>Sérgio Rebelo</p>
-              </div>
-
-            </div>
-
-            <div class="container-members">
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/phardman.png" alt="paul-hardman-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 5</h2>
-                <p>Paul Hardman</p>
-              </div>
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/rsacadura.png" alt="ricardo-sacadura-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 6</h2>
-                <p>Ricardo Sacadura</p>
-              </div>
-
-              <div class="member">
-                <div class="member-img">
-                  <img src="img/intervenientes/dribeiro.png" alt="diogo-ribeiro-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
-                  </div>
-                </div>
-                <h2>Talk 7</h2>
-                <p>Diogo Ribeiro</p>
-              </div>
 
               <div class="member">
                 <div class="member-img">
                   <img src="img/intervenientes/snogueira.png" alt="simao-nogueira-photo">
-                  <div class="member-info">
-                    <p>ajkdlaskdlas</p>
+                  <div class="rect">
+                    <p><b>Design<br>processes</b><br>aprender,<br>empreender<br><br>&darr; Museu da<br>Ciência</p>
                   </div>
                 </div>
-                <h2>Talk 8</h2>
-                <p>Simão Nogueira</p>
+                <h2>Simão Nogueira</h2>
+                <p>19 abril - 14h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/jwalsh.png" alt="jessica-walsh-photo">
+                  <div class="rect">
+                    <p><b>Design e<br>exploração<br>gráfica</b><br><br>&darr; DEI<br></p>
+                  </div>
+                </div>
+                <h2>Jéssica Walsh</h2>
+                <p>20 abril - 14h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/atudella.png" alt="antonio-tudella-photo">
+                  <div class="rect2">
+                    <p><b>Design e<br>estética</b><br>porquê<br>freelance?<br><br>&darr; Colégio<br>das Artes</p>
+                  </div>
+                </div>
+                <h2>António Tudella</h2>
+                <p>21 abril - 14h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/rsoares.png" alt="rita-soares-photo">
+                  <div class="rect2">
+                    <p><b>O poder de<br>um bom<br>portfolio</b><br><br>&darr; Museu da<br>Ciência</p>
+                  </div>
+                </div>
+                <h2>Rita Soares</h2>
+                <p>22 abril - 14h</p>
+              </div>
+
+            </div>
+
+            <div class="container-members">
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/aesteves.png" alt="adriano-esteves-photo">
+                  <div class="rect">
+                    <p><b>Design<br>disruptivo</b><br>criação da<br>Bürocratik<br><br>&darr; Colégio<br>das Artes</p>
+                  </div>
+                </div>
+                <h2>Adriano Esteves</h2>
+                <p>19 abril - 16h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/jcastro.png" alt="joao-castro-photo">
+                  <div class="rect">
+                    <p><b>Design e<br>interação</b><br>a chegada dos<br>moving posters<br><br>&darr; Museu da<br>Ciência</p>
+                  </div>
+                </div>
+                <h2>João Castro</h2>
+                <p>20 abril - 16h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/imatos.png" alt="ivo-matos-photo">
+                  <div class="rect2">
+                    <p><b>UI & UX</b><br>novidade ou<br>saudade?<br><br>&darr; DEI</p>
+                  </div>
+                </div>
+                <h2>Ivo Matos</h2>
+                <p>21 abril - 16h</p>
+              </div>
+
+              <div class="member">
+                <div class="member-img">
+                  <img src="img/intervenientes/jgomes.png" alt="jose-gomes-photo">
+                  <div class="rect2">
+                    <p><b>Universo<br>vetorial</b><br>dicas para um<br>bom desempenho<br><br>&darr; dARQ</p>
+                  </div>
+                </div>
+                <h2>José Gomes</h2>
+                <p>22 abril - 16h</p>
               </div>
 
             </div>
@@ -233,10 +275,11 @@
         </div>
 
 
-        <div class="slide seven">
+        <div class="slide seven" id="seven">
           <div class="contacts" id="contacts">
             <h1>CONTACTOS</h1>
           </div>
+          <a href="#" class="go-back"><img src="img/back.svg" alt="back-arrow"></a>
         </div>
 
       </div>
@@ -244,17 +287,8 @@
 
   </section>
 
-  <script type="text/javascript" src="js/logo.js"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({
-        offset: 0, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 3000, // values from 0 to 3000, with step 50ms
-
-      });
-</script>
+  <script type="text/javascript" src="js/scroll.js"></script>
 </body>
 
 </html>

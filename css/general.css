@@ -1,20 +1,36 @@
 * {
   margin: 0px;
+}
+@font-face {
+  font-family: 'grotesk';
+  src: url(../font/SpaceGrotesk-Regular.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+h1, h2, li{
   font-family: 'Space Mono', monospace;
 }
+p{
+  font-family: 'grotesk';
+  font-weight: 100;
+}
 body{
+  cursor: url('../img/cursor.png'), auto;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 #logo {
+  display: none;
   background: #f00;
   position: absolute;
   top: 30%;
   margin-left: calc(50vw - 10%);
   z-index: -1;
+  transform-origin: center center;
 }
 #logo img{
   position: fixed;
@@ -26,14 +42,77 @@ body{
   margin: 10% 0 0 5%;
 }
 
+
+#date h1{
+  position: fixed;
+  bottom: 1%;
+  left: 2%;
+  font-size: 2em;
+  font-weight: 400;
+}
+#date h2{
+  position: fixed;
+  bottom: 1%;
+  left: 19%;
+  font-size: 2em;
+  font-weight: 400;
+}
+#date .date-line{
+  background: #000;
+  position: fixed;
+  bottom: 3.7%;
+  left: 6%;
+  font-size: 3em;
+  padding-left: 12%;
+  height: 0.5%;
+}
+.go-home img{
+  position: absolute;
+  cursor: pointer;
+  z-index:10;
+  padding: 1%;
+  width: 5%;
+}
+
+@media only screen and (max-width:800px) {
+  .go-home img{
+    width: 10%;
+  }
+  #date h1{
+    bottom: 1%;
+    left: 2%;
+  }
+  #date .date-line{
+    bottom: 3%;
+    left: 8%;
+  }
+  #date h2{
+    left: 22%;
+  }
+}
+@media only screen and (max-width:400px) {
+  #date h1{
+    font-size: 1.5em;
+    bottom: 1%;
+    left: 3%;
+  }
+  #date .date-line{
+    bottom: 3%;
+    left: 13%;
+  }
+  #date h2{
+    font-size: 1.5em;
+    left: 27%;
+  }
+}
 /*---------------MENU----------------*/
 
 .menu {
   z-index: 1;
   padding-top: 10px;
   position: fixed;
-  top: 2%;
-  left: 2%;
+  top: 1%;
+  left: 50vw;
 }
 
 .menu a {
@@ -59,8 +138,8 @@ body{
 .eye {
   position: absolute;
   display: block;
-  margin-left: -16px;
-  margin-top: 8px;
+  margin-left: -1.3vw;
+  margin-top: 0.6vh;
 }
 
 .menu img {
@@ -73,21 +152,34 @@ body{
   opacity: 1;
   transition: 200ms ease-in;
 }
+@media only screen and (max-width:400px) {
+  .dot1, .dot2, .dot3 {
+    font-size: 1em;
+  }
+  .dot1 {
+    margin-top: -7px;
+  }
+
+  .dot3 {
+    margin-top: 7px;
+  }
+}
 
 
 #hiddenMenu {
+  cursor: default;
   background: #000;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index:20;
   position: fixed;
   display: none;
 }
 .close {
   position: absolute;
   cursor: pointer;
-  right: 32px;
-  top: 32px;
+  top: 2%;
+  left: 49.5%;
   width: 32px;
   height: 32px;
 }
@@ -124,7 +216,9 @@ body{
 }
 
 .bg {
-  background-color: #000;
+  background-image: url(../img/sobre.jpg);
+  background-position: center;
+  background-size: cover;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -134,35 +228,35 @@ body{
   pointer-events: none;
 }
 .menu-list li:first-child:hover~.bg {
-  background-image: url(../img/uc.jpg);
+  background-image: url(../img/sobre.jpg);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
 }
 
 .menu-list li:nth-child(2):hover~.bg {
-  background-image: url(../img/ciencia.jpg);
+  background-image: url(../img/edicao.jpg);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
 }
 
 .menu-list li:nth-child(3):hover~.bg {
-  background-image: url(../img/dARQ_black.jpg);
+  background-image: url(../img/locais.jpg);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
 }
 
 .menu-list li:nth-child(4):hover~.bg {
-  background-image: url(../img/dei.jpg);
+  background-image: url(../img/intervenientes.jpg);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
 }
 
 .menu-list li:nth-child(5):hover~.bg {
-  background-image: url(../img/museu.jpg);
+  background-image: url(../img/contactos.jpg);
   background-position: center;
   background-size: cover;
   transition: 0.5s;
