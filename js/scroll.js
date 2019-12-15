@@ -11,7 +11,6 @@ var seven = document.getElementById("seven");
 
 function scrolling() {
   var scroll = elmnt.scrollTop / 2;
-  //console.log(scroll);
 
 
   /*---DIV-2-TRANSITION---*/
@@ -29,15 +28,15 @@ function scrolling() {
   }
   /*tablet*/
   if (window.matchMedia("(max-width: 800px)").matches) {
-    if (scroll >= 150) {
+    if (scroll >= 200) {
       three.style.opacity = "1";
     } else {
       three.style.opacity = "0";
     }
   }
   /*phone*/
-  if (window.matchMedia("(max-width: 400px)").matches) {
-    if (scroll >= 80) {
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    if (scroll >= 150) {
       three.style.opacity = "1";
     } else {
       three.style.opacity = "0";
@@ -52,15 +51,15 @@ function scrolling() {
   }
   /*tablet*/
   if (window.matchMedia("(max-width: 800px)").matches) {
-    if (scroll >= 400) {
+    if (scroll >= 500) {
       four.style.opacity = "1";
     } else {
       four.style.opacity = "0";
     }
   }
   /*phone*/
-  if (window.matchMedia("(max-width: 400px)").matches) {
-    if (scroll >= 200) {
+  if (window.matchMedia("(max-width:500px)").matches) {
+    if (scroll >= 300) {
       four.style.opacity = "1";
     } else {
       four.style.opacity = "0";
@@ -82,8 +81,8 @@ function scrolling() {
     }
   }
   /*phone*/
-  if (window.matchMedia("(max-width: 400px)").matches) {
-    if (scroll >= 425) {
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    if (scroll >= 500) {
       five.style.opacity = "1";
     } else {
       five.style.opacity = "0";
@@ -98,15 +97,15 @@ function scrolling() {
   }
   /*tablet*/
   if (window.matchMedia("(max-width: 800px)").matches) {
-    if (scroll >= 1000) {
+    if (scroll >= 1150) {
       six.style.opacity = "1";
     } else {
       six.style.opacity = "0";
     }
   }
   /*phone*/
-  if (window.matchMedia("(max-width: 400px)").matches) {
-    if (scroll >= 550) {
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    if (scroll >= 700) {
       six.style.opacity = "1";
     } else {
       six.style.opacity = "0";

@@ -76,7 +76,7 @@
   }
 }
 /*phone*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .two{
     transition: all 1s;
   }
@@ -150,7 +150,7 @@
   display: none;
 }
 /*tablet*/
-@media only screen and (min-width:400px) and (max-width:800px) {
+@media only screen and (min-width:500px) and (max-width:800px) {
   .last .info{
     display: block;
   }
@@ -174,7 +174,7 @@
   }
 }
 /*phone*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .four{
     transition: all 1s;
   }
@@ -272,7 +272,7 @@
   }
 }
 /*phone*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .five{
     transition: all 1s;
   }
@@ -434,7 +434,7 @@
   }
 }
 /*phone*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .six{
     transition: all 1s;
   }
@@ -468,6 +468,7 @@
     font-size: 0.5em;
   }
   .rect2 p{
+    margin-left: 1%;
     font-size: 0.5em;
   }
 }
