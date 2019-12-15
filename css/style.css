@@ -24,6 +24,11 @@
   -ms-overflow-style: none;
 }
 
+@media only screen and (max-width:350px) {
+  p {
+    font-size: 0.4em;
+  }
+}
 /*----INTRO----*/
 .one {
   width: 100vw;
@@ -478,36 +483,86 @@
 .seven{
   right: 0;
   position: absolute;
-  width: 8vw;
+  width: 5vw;
   background: #000;
-  transition: all .2s ease-in-out;
-}
-.contacts h1{
-  opacity: 0;
-  display: none;
-  margin-top: 12%;
-  color: #fff;
-  font-size: 2em;
-
+  cursor: default;
+  transition: all .3s ease-in-out;
 }
 .contacts{
-  padding: 5%;
+  position: absolute;
+  opacity: 0;
+  display: none;
+  padding: 5% 10%;
+  color: #fff;
+}
+.contacts h1{
+  margin-top: 12%;
+  font-size: 2em;
+}
+.contacts p{
+  font-family: 'Space Mono';
+  margin-top: 2%;
+}
+.contact-links{
+  margin-top: 10%;
+}
+.contact-links a{
+  color: #fff;
+  text-decoration: none;
+}
+.contact-logos{
+  margin-top: 10%;
+  display: flex;
+}
+.contact-logos img{
+  width: 20%;
+  height: 20%;
+}
+.contact-logos img:nth-child(2){
+  width: 40%;
+  margin-top: -11%;
+  margin-left: 8%;
+}
+.find{
+  margin-top: 30vh;
 }
 .go-back{
-  float: right;
+  margin-top: 90vh;
+  position: absolute;
+  margin-left: 50%;
 }
 .go-back img{
-  margin-left: 50%;
-  margin-top: 85vh;
-  width: 30%;
+  width: 25px;
 }
 .seven:hover{
   width: 22vw;
 }
-.seven:hover .contacts h1{
+.seven:hover .contacts{
   display: block;
   opacity: 1;
 }
-.seven:hover .go-back img{
-    margin-top: 75vh;
+.seven:hover .go-back {
+  margin-left: 10%;
+}
+@media only screen and (max-width:800px) {
+  .seven{
+    width: 8vw;
+  }
+  .seven:hover{
+    width: 30vw;
+  }
+}
+@media only screen and (max-width:500px) {
+  .seven{
+    width: 20vw;
+  }
+  .seven:hover{
+    width: 50vw;
+  }
+  .seven h1{
+    font-size: 1.5em;
+  }
+  .seven p , a{
+    font-size: 0.8em;
+  }
 }

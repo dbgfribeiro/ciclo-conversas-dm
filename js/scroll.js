@@ -11,6 +11,7 @@ var seven = document.getElementById("seven");
 
 function scrolling() {
   var scroll = elmnt.scrollTop / 2;
+  console.log(scroll);
 
 
   /*---DIV-2-TRANSITION---*/
@@ -42,6 +43,16 @@ function scrolling() {
       three.style.opacity = "0";
     }
   }
+  /*small-phone*/
+  if (window.matchMedia("(max-width: 350px)").matches) {
+    if (scroll >= 150) {
+      three.style.opacity = "1";
+    } else {
+      three.style.opacity = "0";
+    }
+  }
+
+
 
   /*---DIV-4-TRANSITION---*/
   if (scroll >= 900) {
@@ -65,6 +76,16 @@ function scrolling() {
       four.style.opacity = "0";
     }
   }
+  /*small-phone*/
+  if (window.matchMedia("(max-width: 350px)").matches) {
+    if (scroll >= 250) {
+      four.style.opacity = "1";
+    } else {
+      four.style.opacity = "0";
+    }
+  }
+
+
 
   /*---DIV-5-TRANSITION---*/
   if (scroll >= 1500) {
@@ -88,6 +109,16 @@ function scrolling() {
       five.style.opacity = "0";
     }
   }
+  /*small-phone*/
+  if (window.matchMedia("(max-width: 350px)").matches) {
+    if (scroll >= 400) {
+      five.style.opacity = "1";
+    } else {
+      five.style.opacity = "0";
+    }
+  }
+
+
 
   /*---DIV-6-TRANSITION---*/
   if (scroll >= 2200) {
@@ -106,6 +137,14 @@ function scrolling() {
   /*phone*/
   if (window.matchMedia("(max-width: 500px)").matches) {
     if (scroll >= 700) {
+      six.style.opacity = "1";
+    } else {
+      six.style.opacity = "0";
+    }
+  }
+  /*small-phone*/
+  if (window.matchMedia("(max-width: 350px)").matches) {
+    if (scroll >= 600) {
       six.style.opacity = "1";
     } else {
       six.style.opacity = "0";
